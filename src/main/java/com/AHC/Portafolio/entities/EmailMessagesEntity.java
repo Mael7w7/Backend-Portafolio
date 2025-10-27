@@ -1,0 +1,33 @@
+package com.AHC.Portafolio.entities;
+
+import jakarta.persistence.*;
+import lombok.*;
+
+import java.time.LocalDateTime;
+
+@Entity
+@Table(name = "Messages")
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
+@Builder
+public class EmailMessagesEntity {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    @Column(length = 100,nullable = false)
+    private String  name;
+
+    @Column(length = 100,nullable = false)
+    private String  Email;
+
+    @Column(length = 300,nullable = false)
+    private String  description;
+
+
+    private LocalDateTime fechaEnvio = LocalDateTime.now();
+
+
+
+}
