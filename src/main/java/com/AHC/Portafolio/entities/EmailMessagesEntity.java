@@ -16,13 +16,13 @@ public class EmailMessagesEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(length = 100,nullable = false)
+    @Column(length = 100)
     private String  name;
 
-    @Column(length = 100,nullable = false)
+    @Column(length = 100)
     private String  Email;
 
-    @Column(length = 300,nullable = false)
+    @Column(length = 300)
     private String  description;
 
 
