@@ -13,6 +13,6 @@ public class FormService  implements IFormService {
 
     @Override
     public FormEntity createForm(FormEntity form) {
-        formRepository.save(form);
+        return formRepository.save(form);
     }
 }
